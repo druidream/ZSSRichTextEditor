@@ -10,7 +10,7 @@
 #import "ZSSDemoViewController.h"
 #import "ZSSColorViewController.h"
 #import "ZSSLargeViewController.h"
-#import "ZSSPlaceholderViewController.h"
+#import "ZSSVariablesViewController.h"
 #import "ZSSSelectiveViewController.h"
 #import "ZSSCustomButtonsViewController.h"
 
@@ -57,7 +57,7 @@
 {
     // Return the number of rows in the section.
     //if (self.isIPad) return 6;
-    return 5;
+    return 6;
 }
 
 
@@ -89,6 +89,9 @@
         cell.textLabel.text = @"Large";
         cell.detailTextLabel.text = @"A large amount of content in the editor";
     } else if (indexPath.row == 5) {
+        cell.textLabel.text = @"Variables";
+        cell.detailTextLabel.text = @"Editable variables in template";
+    } else if (indexPath.row == 6) {
         cell.textLabel.text = @"iPad Form Style Modal";
         cell.detailTextLabel.text = @"Shows a form style modal on the iPad";
     }
@@ -116,6 +119,9 @@
         ZSSLargeViewController *demo5 = [[ZSSLargeViewController alloc] init];
         [self.navigationController pushViewController:demo5 animated:YES];
     } else if (indexPath.row == 5) {
+        ZSSVariablesViewController *demo6 = [[ZSSVariablesViewController alloc] init];
+        [self.navigationController pushViewController:demo6 animated:YES];
+    } else if (indexPath.row == 6) {
         ZSSDemoViewController *demo1 = [[ZSSDemoViewController alloc] init];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:demo1];
         nav.modalPresentationStyle = UIModalPresentationFormSheet;

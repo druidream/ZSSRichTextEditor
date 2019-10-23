@@ -114,6 +114,7 @@
 		45F860C618A84CFA0011266B /* ZSSunlink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F860A418A84CFA0011266B /* ZSSunlink@2x.png */; };
 		45F860C718A84CFA0011266B /* ZSSunorderedlist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F860A518A84CFA0011266B /* ZSSunorderedlist@2x.png */; };
 		45F860C818A84CFA0011266B /* ZSSviewsource@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F860A618A84CFA0011266B /* ZSSviewsource@2x.png */; };
+		5B688F195C0D66B6C7C492AB /* ZSSVariablesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B68864FBB82DB8E85C3DE43 /* ZSSVariablesViewController.m */; };
 		946ADB9B2285CA3B00DB27F2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946ADB9A2285CA3B00DB27F2 /* Launch Screen.storyboard */; };
 		DB1D27A21D79EC1700EC1CBD /* ZSSimageDevice.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1D27A01D79EC1700EC1CBD /* ZSSimageDevice.png */; };
 		DB1D27A31D79EC1700EC1CBD /* ZSSimageDevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1D27A11D79EC1700EC1CBD /* ZSSimageDevice@2x.png */; };
@@ -261,6 +262,8 @@
 		45F860A418A84CFA0011266B /* ZSSunlink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZSSunlink@2x.png"; path = "Source/Images/ZSSunlink@2x.png"; sourceTree = "<group>"; };
 		45F860A518A84CFA0011266B /* ZSSunorderedlist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZSSunorderedlist@2x.png"; path = "Source/Images/ZSSunorderedlist@2x.png"; sourceTree = "<group>"; };
 		45F860A618A84CFA0011266B /* ZSSviewsource@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZSSviewsource@2x.png"; path = "Source/Images/ZSSviewsource@2x.png"; sourceTree = "<group>"; };
+		5B6881A4A9BFF6787DD070E0 /* ZSSVariablesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSSVariablesViewController.h; path = Classes/ZSSVariablesViewController.h; sourceTree = "<group>"; };
+		5B68864FBB82DB8E85C3DE43 /* ZSSVariablesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSSVariablesViewController.m; path = Classes/ZSSVariablesViewController.m; sourceTree = "<group>"; };
 		946ADB9A2285CA3B00DB27F2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		DB1D27A01D79EC1700EC1CBD /* ZSSimageDevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ZSSimageDevice.png; path = Source/Images/ZSSimageDevice.png; sourceTree = "<group>"; };
 		DB1D27A11D79EC1700EC1CBD /* ZSSimageDevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZSSimageDevice@2x.png"; path = "Source/Images/ZSSimageDevice@2x.png"; sourceTree = "<group>"; };
@@ -301,15 +304,17 @@
 				2343B1DC199B34B500349048 /* ZSSColorViewController.m */,
 				2343B1DE199BE4D000349048 /* ZSSLargeViewController.h */,
 				2343B1DF199BE4D000349048 /* ZSSLargeViewController.m */,
+				2343B22A199D6D6400349048 /* ZSSSelectiveViewController.h */,
 				2343B227199D237100349048 /* ZSSPlaceholderViewController.h */,
 				2343B228199D237100349048 /* ZSSPlaceholderViewController.m */,
-				2343B22A199D6D6400349048 /* ZSSSelectiveViewController.h */,
 				2343B22B199D6D6400349048 /* ZSSSelectiveViewController.m */,
 				2343B22D199D6E6700349048 /* ZSSCustomButtonsViewController.h */,
 				2343B22E199D6E6700349048 /* ZSSCustomButtonsViewController.m */,
 				DB1D27A41D79F62D00EC1CBD /* DemoModalViewController.h */,
 				DB1D27A51D79F62D00EC1CBD /* DemoModalViewController.m */,
 				946ADB9A2285CA3B00DB27F2 /* Launch Screen.storyboard */,
+				5B68864FBB82DB8E85C3DE43 /* ZSSVariablesViewController.m */,
+				5B6881A4A9BFF6787DD070E0 /* ZSSVariablesViewController.h */,
 			);
 			name = Demo;
 			sourceTree = "<group>";
@@ -718,6 +723,7 @@
 				45F80458189B1E9300A1EDD9 /* ZSSDemoPickerViewController.m in Sources */,
 				4513B3D8184E8F5100A9CA86 /* ZSSBarButtonItem.m in Sources */,
 				DB703BB61D7B73600013C608 /* ZSSFontsViewController.m in Sources */,
+				5B688F195C0D66B6C7C492AB /* ZSSVariablesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
