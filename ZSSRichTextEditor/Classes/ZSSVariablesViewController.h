@@ -21,49 +21,23 @@
     "        outline: 0px solid transparent;    "
     "    }    "
     "        "
-    "    .predefined-placeholder {    "
+    "    #zss_editor_content {padding:5px}    "
+    "        "
+    "    .customplaceholder {    "
     "        width: auto;     "
     "        display: inline-block !important;     "
     "        display: inline;    "
-    "        padding: 1px 4px;    "
+    "        padding: 2px 4px 1px 4px;    "
     "        border-radius: 3px;    "
-    "        background-color: #c9daf8;    "
-    "        color: transparent;    "
-    "          text-shadow: 0 0 0 black;    "
+    "        background-color: #4093F5;    "
+    "        color: white;    "
     "        outline: 0px solid transparent;    "
     "    }    "
     "        "
-    "    .predefined-placeholder:focus {    "
-    "        width: auto;     "
-    "        display: inline-block !important;     "
-    "        display: inline;    "
-    "        background-color: #336dd4;    "
-    "        color: transparent;    "
-    "          text-shadow: 0 0 0 white;    "
-    "        outline: 0px solid transparent;    "
-    "    }    "
-    "        "
-    "    .custom-placeholder {    "
-    "        width: auto;     "
-    "        display: inline-block !important;     "
-    "        display: inline;    "
-    "        padding: 1px 4px;    "
-    "        border-radius: 3px;    "
-    "        background-color: #ffdcb8;    "
-    "        color: black;    "
-    "        caret-color: blue;    "
-    "        outline: 0px solid transparent;    "
-    "    }    "
-    "        "
-    "    .custom-placeholder:focus {    "
-    "        width: auto;     "
-    "        display: inline-block !important;     "
-    "        display: inline;    "
+    "    .customplaceholder_focus {    "
     "        background-color: white;    "
-    "        color: black;    "
-    "        caret-color: blue;    "
-    "        box-shadow: 0 0 0 1pt #ffdcb8;    "
-    "        outline: 0px solid transparent;    "
+    "        color: #4093F5;    "
+    "        box-shadow: 0 0 0 1pt #4093F5;    "
     "    }    ";
     [self setCSS:customCSS];
 
@@ -73,7 +47,7 @@
     // HTML Content to set in the editor
     NSString *html = @"<div class='test'></div><!-- This is an HTML comment -->"
     "<p>This is a test of the <strong>ZSSRichTextEditor</strong> by <a title=\"Zed Said\" href=\"http://www.zedsaid.com\">Zed Said Studio</a></p>"
-    "<div tabindex=\"-1\" class=\"custom-placeholder\">Placeholder1</div>";
+    "<span class=\"customplaceholder\">Samantha</span>";
 
     // Set the base URL if you would like to use relative links, such as to images.
     self.baseURL = [NSURL URLWithString:@"http://www.zedsaid.com"];
@@ -87,3 +61,4 @@
 
 
 @end
+
